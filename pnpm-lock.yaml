@@ -53,6 +53,7 @@ specifiers:
   dayjs: ^1.10.7
   dotenv: ^16.0.0
   echarts: ^5.3.0
+  element-resize-detector: ^1.2.4
   eslint: ^8.10.0
   eslint-config-prettier: ^8.4.0
   eslint-define-config: ^1.2.5
@@ -137,6 +138,7 @@ dependencies:
   crypto-js: registry.npmmirror.com/crypto-js/4.1.1
   dayjs: registry.npmmirror.com/dayjs/1.10.8
   echarts: registry.npmmirror.com/echarts/5.3.1
+  element-resize-detector: registry.npmmirror.com/element-resize-detector/1.2.4
   intro.js: registry.npmmirror.com/intro.js/5.0.0
   lodash-es: registry.npmmirror.com/lodash-es/4.17.21
   mockjs: registry.npmmirror.com/mockjs/1.1.0
@@ -3626,7 +3628,7 @@ packages:
 
   registry.npmmirror.com/Console/0.7.2:
     resolution: {integrity: sha512-+JSDwGunA4MTEgAV/4VBKwUHonP8CzJ/6GIuwPi6acKFqFfHUdSGCm89ZxZ5FfGWdZfkdgAroy5bJ5FSeN/t4g==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/Console/-/Console-0.7.2.tgz}
-    name: Console
+    name: console
     version: 0.7.2
     dev: true
 
@@ -4265,6 +4267,12 @@ packages:
     name: base64-js
     version: 1.5.1
     dev: true
+
+  registry.npmmirror.com/batch-processor/1.0.0:
+    resolution: {integrity: sha512-xoLQD8gmmR32MeuBHgH0Tzd5PuSZx71ZsbhVxOCRbgktZEPe4SQy7s9Z50uPp0F/f7iw2XmkHN2xkgbMfckMDA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/batch-processor/-/batch-processor-1.0.0.tgz}
+    name: batch-processor
+    version: 1.0.0
+    dev: false
 
   registry.npmmirror.com/before-after-hook/2.2.2:
     resolution: {integrity: sha512-3pZEU3NT5BFUo/AD5ERPWOgQOCZITni6iavr5AUw5AUwQjMlI0kzu5btnyD39AF0gUEsDPwJT+oY1ORBJijPjQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/before-after-hook/-/before-after-hook-2.2.2.tgz}
@@ -6159,6 +6167,14 @@ packages:
     name: electron-to-chromium
     version: 1.4.82
     dev: true
+
+  registry.npmmirror.com/element-resize-detector/1.2.4:
+    resolution: {integrity: sha512-Fl5Ftk6WwXE0wqCgNoseKWndjzZlDCwuPTcoVZfCP9R3EHQF8qUtr3YUPNETegRBOKqQKPW3n4kiIWngGi8tKg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/element-resize-detector/-/element-resize-detector-1.2.4.tgz}
+    name: element-resize-detector
+    version: 1.2.4
+    dependencies:
+      batch-processor: registry.npmmirror.com/batch-processor/1.0.0
+    dev: false
 
   registry.npmmirror.com/emittery/0.8.1:
     resolution: {integrity: sha512-uDfvUjVrfGJJhymx/kz6prltenw1u7WrCg1oa94zYY8xxVpLLUu045LAT0dhDZdXG58/EpPL/5kA180fQ/qudg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/emittery/-/emittery-0.8.1.tgz}

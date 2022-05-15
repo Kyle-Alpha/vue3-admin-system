@@ -148,6 +148,22 @@ const feat: AppRouteModule = {
       },
     },
     {
+      path: 'text-overflow',
+      name: 'textOverflowDemo',
+      component: () => import('/@/views/demo/feat/text-overflow/index.vue'),
+      meta: {
+        title: t('routes.demo.feat.textOverflow'),
+      },
+    },
+    {
+      path: 'text-insert',
+      name: 'textInsert',
+      component: () => import('/@/views/demo/feat/text-insert/index.vue'),
+      meta: {
+        title: t('routes.demo.feat.textInsert'),
+      },
+    },
+    {
       path: 'img-preview',
       name: 'ImgPreview',
       component: () => import('/@/views/demo/feat/img-preview/index.vue'),

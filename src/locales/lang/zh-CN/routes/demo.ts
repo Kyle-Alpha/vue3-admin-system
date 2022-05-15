@@ -72,6 +72,8 @@ export default {
     contextMenu: '右键菜单',
     download: '文件下载',
     clickOutSide: 'ClickOutSide组件',
+    textOverflow: '溢出组件',
+    textInsert: '光标插入组件',
     imgPreview: '图片预览',
     copy: '剪切板',
     msg: '消息提示',

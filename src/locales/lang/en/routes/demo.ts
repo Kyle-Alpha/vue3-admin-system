@@ -73,6 +73,8 @@ export default {
     contextMenu: 'Context Menu',
     download: 'Download',
     clickOutSide: 'ClickOutSide',
+    textOverflow: 'TextOverflow',
+    textInsert: 'textInsert',
     imgPreview: 'Picture Preview',
     copy: 'Clipboard',
     msg: 'Message prompt',

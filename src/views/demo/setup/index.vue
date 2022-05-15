@@ -1,17 +1,19 @@
 <template>
   <PageWrapper title="引导页" content="用于给用户的指引操作">
     <a-button type="primary" @click="handleStart">开始</a-button>
+    <learn-ts />
   </PageWrapper>
 </template>
 <script lang="ts">
   import { defineComponent } from 'vue';
   import { PageWrapper } from '/@/components/Page';
   import { useDesign } from '/@/hooks/web/useDesign';
+  import learnTs from './learnTs.vue';
   import intro from 'intro.js';
   import 'intro.js/minified/introjs.min.css';
 
   export default defineComponent({
-    components: { PageWrapper },
+    components: { PageWrapper, learnTs },
     setup() {
       const { prefixVar } = useDesign('');
 
@@ -41,3 +43,9 @@
     },
   });
 </script>
+<style>
+  .cls {
+    align-items: center;
+    justify-content: space-between;
+  }
+</style>
