@@ -2,7 +2,6 @@ import type { App, Directive, DirectiveBinding } from 'vue';
 // 派发自定义事件
 function isInput(el: Element, binding: any, vnode: any) {
   const input: any = el.querySelector('input') || el;
-  console.log(el, input, binding);
   const regDecimal = RegExp(`^\\D*(\\d{0,${binding.value || 8}}(?:\\.\\d{0,2})?).*$`, 'g');
   input.addEventListener('compositionstart', () => {
     vnode.inputLocking = true;
@@ -45,7 +44,7 @@ function isInput(el: Element, binding: any, vnode: any) {
   input.addEventListener('blur', () => {
     const oldValue = input.value;
     let newValue = input.value;
-    if (newValue) {
+    if (newValue && !binding.modifiers.int) {
       newValue = Number(newValue.replace(/\$\s?|(,*)/g, '')).toFixed(2);
     }
     // 判断是否需要更新，避免进入死循环
